@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using HelloWorld.Models;
 
 namespace HelloWorld.Data
 {
@@ -12,5 +13,8 @@ namespace HelloWorld.Data
         {
 
         }
+
+        public DbSet<Category> Category { get; set; }
+        public DbSet<ApplicationType> ApplicationType { get; set; }
     }
 }
